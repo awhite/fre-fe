@@ -3,7 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply h-screen;
-    }
+  body {
+    @apply h-screen relative bg-white dark:bg-gray-900 text-black dark:text-gray-200;
+  }
+
+  input[type='checkbox'],
+  input[type='radio'],
+  input[type='text'],
+  select {
+    @apply dark:bg-gray-700 dark:text-gray-200;
+  }
+
+  .lds-roller div:after {
+    @apply bg-black dark:bg-gray-200;
+  }
+
+  .filter-row {
+    @apply flex justify-center items-center mb-4;
+  }
+
+  .btn-outline {
+    @apply text-sm border rounded ml-2 px-2 py-1 hover:bg-gray-200 dark:hover:bg-gray-800;
+  }
+
+  .btn-primary {
+    @apply disabled:cursor-not-allowed disabled:bg-blue-300 disabled:border-blue-300 dark:disabled:bg-gray-600 dark:disabled:border-gray-600 dark:disabled:text-gray-400 border  dark:bg-green-700 dark:border-green-700 cursor-pointer px-2 py-1 rounded-md bg-blue-600 border-blue-600 text-gray-200;
+  }
+
+  .btn-block {
+    @apply flex-1 py-1.5;
+  }
+
+  h2 {
+    @apply text-2xl mb-4;
+  }
+
+  h1 {
+    @apply text-4xl mb-4;
+  }
+
+  .modal-label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+
+  h4 {
+    @apply text-2xl font-semibold text-center mb-4;
+  }
+
+  .icon {
+    @apply fill-current text-black dark:text-gray-200;
+  }
 }

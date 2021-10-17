@@ -1,20 +1,12 @@
 <script>
-    let section
+  import Results from './components/Results.svelte'
+
+  import SearchForm from './components/SearchForm.svelte'
 </script>
 
-<style>
-    main {
-        @apply grid place-items-center h-full;
-    }
-</style>
-
-<main>
-    <div>
-        <section bind:this={section}>
-            <h1 class="text-svelte-500 text-4xl pb-8">Svelte & TailwindCSS JIT on Vite</h1>
-        </section>
-        <pre>
-          {section?.innerHTML}
-        </pre>
-    </div>
+<main
+  class="flex flex-col items-center max-w-2xl mx-auto pt-4 px-4 h-full pb-12"
+>
+  <SearchForm />
+  <Results />
 </main>

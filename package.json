@@ -19,5 +19,8 @@
     "svelte-preprocess": "^4.6.9",
     "tailwindcss": "^2.0.3",
     "vite": "^2.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.23.0"
   }
 }
