@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from 'axios'
 
 type CancelableRequest = [Promise<any>, () => void]
 
-const http = axios.create({ baseURL: process.env.API_BASE_URL })
+const http = axios.create({ baseURL: import.meta.env.VITE_API_BASE_URL })
 
 function executeCancelableRequest(
   config: AxiosRequestConfig
